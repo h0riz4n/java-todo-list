@@ -39,7 +39,7 @@ public class TodoDto {
         TodoView.Summary.class, TodoView.Detail.class
     })
     @Schema(example = "false")
-    private String isCompleted;
+    private Boolean isCompleted;
 
     @NotNull
     @JsonView({
