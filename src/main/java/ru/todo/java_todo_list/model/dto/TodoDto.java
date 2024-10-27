@@ -34,12 +34,11 @@ public class TodoDto {
     @Schema(example = "Тренировка в спортзале")
     private String description;
 
-    @NotNull
     @JsonView({
         TodoView.Summary.class, TodoView.Detail.class
     })
     @Schema(example = "false")
-    private String isCompleted;
+    private Boolean isCompleted;
 
     @NotNull
     @JsonView({
