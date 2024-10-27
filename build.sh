@@ -19,7 +19,7 @@ docker rm java-todo || true
 docker run -p ${APP_PORT}:8080 \
 --network local \
 --expose 8080 \
--n java-todo \
+--name java-todo \
 -e LOGGING_LEVEL=DEBUG \
 -e DB_URL=jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME} \
 -e DB_PASSWORD=${DB_PASSWORD} \
@@ -27,5 +27,4 @@ docker run -p ${APP_PORT}:8080 \
 -e SHOW_SQL=true \
 -e USE_SWAGGER=true \
 -e HOST_URL=http://localhost:${APP_PORT} \
--e CONTEXT_PATH=/api \
-java-todo:$APP_VERSION
+-d java-todo:$APP_VERSION
