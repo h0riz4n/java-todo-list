@@ -27,4 +27,5 @@ docker run -p ${APP_PORT}:8080 \
 -e SHOW_SQL=true \
 -e USE_SWAGGER=true \
 -e HOST_URL=http://localhost:${APP_PORT} \
+--restart unless-stopped \
 -d java-todo:$APP_VERSION
