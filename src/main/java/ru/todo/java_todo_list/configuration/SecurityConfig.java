@@ -42,7 +42,7 @@ public class SecurityConfig {
                     .anyRequest()
                     .permitAll();
             })
-            .sessionManagement(sessionManagment -> sessionManagment.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED))
+            .sessionManagement(sessionManagment -> sessionManagment.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .build();
     }
 }
