@@ -34,7 +34,6 @@ public class TodoDto {
     @Schema(example = "Тренировка в спортзале")
     private String description;
 
-    @NotNull
     @JsonView({
         TodoView.Summary.class, TodoView.Detail.class
     })
