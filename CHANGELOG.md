@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/h0riz4n/java-todo-list/compare/v1.1.0...v1.1.1) (2024-10-28)
+
+
+### Bug Fixes
+
+* Измененён пример-файл конфигурации переменных окружения ([c0f1f7c](https://github.com/h0riz4n/java-todo-list/commit/c0f1f7c589ecc70c9645968c8c7bd05eb7b8d0e7))
+
 # [1.1.0](https://github.com/h0riz4n/java-todo-list/compare/v1.0.2...v1.1.0) (2024-10-28)
 
 
