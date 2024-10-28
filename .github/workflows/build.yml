@@ -1,4 +1,4 @@
-name: Test
+name: Release
 
 on:
   push:
@@ -6,15 +6,15 @@ on:
       - main
 
 jobs:
-  test:
+  release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 20
-      - run: mkdir -p semantic_release_modules
-      - run: npm install semantic-release @semantic-release/changelog @semantic-release/git --prefix ./semantic_release_modules
-      - run: ./semantic_release_modules/node_modules/.bin/semantic-release
+          node-version: '14'
+      - run: npm ci
+      - run: npx semantic-release
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }
