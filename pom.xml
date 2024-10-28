@@ -12,7 +12,7 @@
 	<artifactId>java-todo-list</artifactId>
 	<version>${project.version}</version>
 	<name>java-todo-list</name>
-	<description>Spring Boot Application for TODO List</description>
+	<description>Spring Boot TODO Application</description>
 	<properties>
 		<project.version>1.0.0</project.version>
 		<java.version>17</java.version>
