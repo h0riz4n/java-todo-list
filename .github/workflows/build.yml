@@ -13,9 +13,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm ci
-      - run: npm run build
-      - run: npx semantic-release
+      - run: mkdir -p semantic_release_modules
+      - run: npm install semantic-release @semantic-release/changelog @semantic-release/git --prefix ./semantic_release_modules
+      - run: ./semantic_release_modules/node_modules/.bin/semantic-release
         env:
           GITHUB_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
       - run: rm -rf node_modules
