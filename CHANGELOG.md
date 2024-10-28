@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/h0riz4n/java-todo-list/compare/v1.0.2...v1.1.0) (2024-10-28)
+
+
+### Features
+
+* Добавлено описание Spring Boot приложения ([79f10d1](https://github.com/h0riz4n/java-todo-list/commit/79f10d13d9e124046ec90dd1d861a25fe0dff9f9))
+
 ## [1.0.2](https://github.com/h0riz4n/java-todo-list/compare/v1.0.1...v1.0.2) (2024-10-28)
 
 
