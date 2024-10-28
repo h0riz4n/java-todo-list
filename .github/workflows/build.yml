@@ -17,5 +17,5 @@ jobs:
       - run: npm install semantic-release @semantic-release/changelog @semantic-release/git --prefix ./semantic_release_modules
       - run: ./semantic_release_modules/node_modules/.bin/semantic-release
         env:
-          GITHUB_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - run: rm -rf node_modules
