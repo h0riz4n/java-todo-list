@@ -33,3 +33,5 @@ build/
 .vscode/
 .env
 build.local.sh
+semantic_release_modules
+version.env
