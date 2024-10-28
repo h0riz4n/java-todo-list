@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/h0riz4n/java-todo-list/compare/v1.1.1...v1.2.0) (2024-10-28)
+
+
+### Features
+
+* Измененён полностью build.sh и Dockerfile для версионирования образа на локальной машине ([4a1b9fd](https://github.com/h0riz4n/java-todo-list/commit/4a1b9fd78c984c9d08055695b7000e985f194af7))
+
 ## [1.1.1](https://github.com/h0riz4n/java-todo-list/compare/v1.1.0...v1.1.1) (2024-10-28)
 
 
