@@ -1,7 +1,7 @@
 const { generateVersionEnv } = require('./create-version.js');
 
 module.exports = {
-    branches: ["dev"],
+    branches: ["dev", "main"],
     plugins: [
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
