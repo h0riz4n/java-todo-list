@@ -2,7 +2,6 @@
 FROM maven:3.8.5-openjdk-17 AS build
 
 ARG APP_VERSION=${APP_VERSION}
-ARG SPRING_PROFILE=${SPRING_PROFILE}
 
 # Копируем файлы проекта в контейнер
 COPY pom.xml .
