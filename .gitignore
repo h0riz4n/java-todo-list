@@ -34,5 +34,4 @@ build/
 .env
 build.local.sh
 semantic_release_modules
-.github
 version.env
