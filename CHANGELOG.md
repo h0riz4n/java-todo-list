@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/h0riz4n/java-todo-list/compare/v1.0.1...v1.0.2) (2024-10-28)
+
+
+### Bug Fixes
+
+* Исправлены ошибки ([7b1e651](https://github.com/h0riz4n/java-todo-list/commit/7b1e651494b0b11b4f85a03e7046ce8875d3dcce))
+
 ## [1.0.1](https://github.com/h0riz4n/java-todo-list/compare/v1.0.0...v1.0.1) (2024-10-28)
 
 
