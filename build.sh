@@ -13,7 +13,7 @@ DB_USER=$5
 DB_PASSWORD=$6
 APP_PORT=8090
 
-docker build . --build-arg APP_VERSION=${APP_VERSION} -t java-todo:${APP_VERSION} 
+docker build . --build-arg APP_VERSION=${APP_VERSION} --build-arg SPRING_PROFILE=local -t java-todo:${APP_VERSION} 
 docker stop java-todo || true
 docker rm java-todo || true 
 docker run -p ${APP_PORT}:8080 \
